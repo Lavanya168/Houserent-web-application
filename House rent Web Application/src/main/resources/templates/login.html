@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Log In</title>
+        <link rel="stylesheet" href="C:\Users\ELCOT\Downloads\spring-boot-auth\src\main\resources\templates\css\style.css">
+       </head>
+       <body>   
+        <!-- Navbar -->
+        <header>
+         <div class="nav container">
+            <!-- Logo -->
+            <a href="C:\Users\ELCOT\Downloads\spring-boot-auth\src\main\resources\templates\index.html" class="logo"><i class='bx bx-home'></i>Rent State</a>
+          
+            <!-- Log in Button-->
+            <a th:href="@{/register}" ><a href="C:\Users\ELCOT\Downloads\spring-boot-auth\src\main\resources\templates\signup.html" class="btn">Sign up</a></a>
+        </div>
+        </header>
+        <!-- Log in -->
+        <div class="login container">
+            <div class="login-container">
+                <h2>Login to Continue</h2>
+                <p>Log in with your data that entered<br>during your registration</p>
+                <!-- Login Form -->
+                <form th:action="@{/users}"
+			method="post" style="max-width: 600px; margin: 0 auto;">
+                    <span>Enter your email address</span>
+                    <input type="email" name="" id="" placeholder="yourmail@gmail.com" required>
+                    <span>Enter your password</span>
+                    <input type="password" name="" id="" placeholder="password" required>
+                    <input type="submit" value="Log in" class="button">
+                    <a href="#">forget password?</a>
+                </form>
+                <a th:href="@{/register}">Register</a>
+            </div>
+            <!-- Login Image -->
+            <div class="login-image">
+            <img src="C:\Users\ELCOT\Downloads\spring-boot-auth\src\main\resources\templates\Images\login.jpg" alt="">
+        </div>
+        </div>
+ <!-- footer -->
+ <section  class="footer">
+    <div class="footer-container container">
+        <h2>R.state</h2>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Agency</a>
+            <br>
+            <a href="#">Building</a>
+            <br>
+            <a href="#">Rates</a>
+        </div>
+        <div class="footer-box">
+            <h3>Locations</h3>
+            <a href="#">Brimingham</a>
+            <br>
+            <a href="#">London</a>
+            <br>
+            <a href="#">New York</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <a href="#">+44 (0)800 123 4567</a>
+            <a href="#">yourmail@gmail.com</a>
+           <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+           </div>
+        </div>
+    </div>
+
+ </section>
+ <!-- copyright -->
+ <div class="copyright">
+    <p>&#169; CarpoolVenom All Right Reserved</p>
+ </div>
+       </body>
+</html>
